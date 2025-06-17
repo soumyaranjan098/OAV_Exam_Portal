@@ -1,0 +1,152 @@
+thead{
+  font-weight: bold;
+  text-shadow: 2px 2px 3px rgb(131, 131, 131);
+  font-size: 1.4rem;
+}
+
+ /* Login */
+
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92vh;
+  background-image: url('./../public/oav_logo.png'),linear-gradient(to bottom right,rgb(223, 223, 223),rgb(176, 255, 255));
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.login .container{
+  display: flex; 
+   align-items: center;
+  justify-content: center;
+  background-color: transparent;
+
+ }
+ .login .registerform{
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 5rem;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.119);
+  border: 2px solid rgba(255,255,255,0.5);
+  border-right: 2px solid rgba(255,255,255,0.2);
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  border-radius:  0px 10% 0px 10%;
+ }
+.container input{
+  width: 100%;
+  border-radius: 20px;
+  padding-left: 5%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+@media (max-width: 767px) {
+  .login .registerform {
+    padding: 5rem 1rem 5rem 1rem ;
+    width: 90%;
+  }
+}
+
+/* ///////////////////  Register  \\\\\\\\\\\\\\\\\\\\\ */
+.Register{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+/* background-image: url('./../public/vssut.png'),linear-gradient(to bottom right,rgb(223, 223, 223),rgb(176, 255, 255)); */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Register .registerform{
+  margin: 2rem;
+}
+
+/*  ///////////////////  homeScreen  ///////////////////  */
+
+.homescreen{
+  background-image: url('./../public/oav_logo.png'),linear-gradient(to bottom right,rgb(223, 223, 223),rgb(176, 255, 255));
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 92vh;
+}
+ 
+/* ///////////////////////  LoadingScreen   //////////////////// */
+
+.loadingScr{
+  height:100vh;
+  width : 100vw;
+  background-image: linear-gradient(to right,rgb(0, 0, 95),rgb(0, 0, 37));
+  /* background-image: linear-gradient(to bottom right,rgb(223, 223, 223),rgb(176, 255, 255)); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#displayText{
+  color: white;
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(223, 223, 223), 0 0 5px rgb(176, 255, 255);
+}
+
+.ll{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 255, 255, 0.521) ;
+  backdrop-filter: blur(5px);
+  
+  box-shadow: 0px 0px 100px 100px rgba(56, 255, 255, 0.511);
+}
+.lr{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 255, 255, 0.521) ;
+  backdrop-filter: blur(5px);
+  
+  box-shadow: 0px 0px 100px 100px rgba(56, 255, 255, 0.511);
+}
+
+/* ///////////// Loader / spinner //////////////////// */
+.custom-spinner {
+   width: 3rem !important;
+  height: 3rem !important; 
+  color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Question Page */
+
+.QCdiv{
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 3px black;
+}
+
+
+
