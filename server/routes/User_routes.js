@@ -58,7 +58,6 @@ router.post("/addUser", authorization, async (req, res) => {
     if (userExist) {
       return res.status(422).json({ error: "Student already exist" });
     } else {
-      console.log("Entered,");
       const student = new User({
         name,
         // email,
@@ -80,7 +79,6 @@ router.post("/addUser", authorization, async (req, res) => {
       res.status(201).json({ message: "user registered sucessfully" });
     }
   } catch (err) {
-    console.log(err);
     res.status(400).json({
       error: "bad request",
     });
@@ -89,18 +87,13 @@ router.post("/addUser", authorization, async (req, res) => {
 
 router.post("/login", async (req, res) => {
   const { registration_no, password } = req.body;
-  console.log(registration_no);
-  console.log(password);
   if (!registration_no || !password) {
-    console.log("in the eror")
     return res
       .status(422)
       .json({ message: "Please fill the fields properly.." });
   }
   try {
-    console.log(registration_no);
     const user = await User.findOne({ registration_no: Number(registration_no) });
-    console.log(user);
     if (user) {
       const isMatch = await bcrypt.compare(password, user.password);
       // const isMatch = true;
@@ -148,20 +141,16 @@ router.get("/rootUser", authorization, async (req, res) => {
     { _id: userId, year: year },
     { password: 0, _id: 0 }
   );
-  // console.log(resp)
   res.send(resp);
 });
 
 router.get("/logout", authorization, (req, res) => {
-  //  console.log('Hello my About');
-  // res.send(`Hello About world from the server`)
   res.clearCookie("jwtoken", { path: "/" });
   res.status(200).send("User Logout");
 });
 
 router.post("/updateUser", authorization, async (req, res) => {
   const user = req.body;
-  // console.log(user);
   try {
     const resp = await User.updateOne(
       { _id: user.userId },

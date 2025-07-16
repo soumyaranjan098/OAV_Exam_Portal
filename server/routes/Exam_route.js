@@ -129,7 +129,6 @@ router.post("/updateIsActive", authorization, async (req, res) => {
 
 router.post("/updateExam", authorization, async (req, res) => {
   const exam = req.body;
-  console.log(exam.exam_id);
   try {
     const resp = await ExaminationModel.updateOne(
       { _id: exam.exam_id },
@@ -263,7 +262,6 @@ router.post("/updateSubIsActive", authorization, async (req, res) => {
 
 router.post("/updateSubExam", authorization, async (req, res) => {
   const exam = req.body;
-  console.log(exam);
   try {
     const resp = await SubExamination.updateOne(
       { _id: exam.exam_id },

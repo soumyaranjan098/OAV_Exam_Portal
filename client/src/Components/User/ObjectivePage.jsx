@@ -138,7 +138,7 @@ function ObjectivePage() {
       >
         <Modal.Header closeButton>
           <Modal.Title>
-          Correct Answer is displayed in <span style={{color:"green"}}>Green colour</span> and worng answer given by Student is displayed in <span style={{color:"red"}}>Red colour</span> 
+          Review your answers. 
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>

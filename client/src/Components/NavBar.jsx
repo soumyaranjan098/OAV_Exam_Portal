@@ -28,7 +28,7 @@ function NavBar() {
     <>
          <Navbar id='nav' bg="light" expand="lg" sticky='top'>
       <Container>
-        <Navbar.Brand style={{marginLeft:"1rem",textShadow:"1px 1px 2px gray",fontFamily:"sans-serif",fontWeight:"bolder"}} href="#home">MCA Exam Portal</Navbar.Brand>
+        <Navbar.Brand style={{marginLeft:"1rem",textShadow:"1px 1px 2px gray",fontFamily:"sans-serif",fontWeight:"bolder"}} href="#home">OAV Exam Portal</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
